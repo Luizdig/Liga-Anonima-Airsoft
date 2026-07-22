@@ -1,2 +1,0 @@
-ALTER TABLE `game_bans` ADD `strikes` int DEFAULT 0 NOT NULL;--> statement-breakpoint
-ALTER TABLE `game_payment_proofs` ADD CONSTRAINT `game_payment_proofs_userId_gameId_game_participations_userId_gameId_fk` FOREIGN KEY (`userId`,`gameId`) REFERENCES `game_participations`(`userId`,`gameId`) ON DELETE cascade ON UPDATE no action;

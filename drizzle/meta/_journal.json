@@ -1,68 +1,19 @@
 {
   "version": "7",
-  "dialect": "mysql",
+  "dialect": "postgresql",
   "entries": [
     {
       "idx": 0,
-      "version": "5",
-      "when": 1782961391292,
-      "tag": "0000_misty_vertigo",
+      "version": "7",
+      "when": 1784742328409,
+      "tag": "0000_overjoyed_lorna_dane",
       "breakpoints": true
     },
     {
       "idx": 1,
-      "version": "5",
-      "when": 1782963048286,
-      "tag": "0001_fantastic_falcon",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "5",
-      "when": 1783006235142,
-      "tag": "0002_cute_blockbuster",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "5",
-      "when": 1783025043477,
-      "tag": "0003_little_rocket_raccoon",
-      "breakpoints": true
-    },
-    {
-      "idx": 4,
-      "version": "5",
-      "when": 1783048809101,
-      "tag": "0004_famous_human_cannonball",
-      "breakpoints": true
-    },
-    {
-      "idx": 5,
-      "version": "5",
-      "when": 1783049929988,
-      "tag": "0005_amusing_payback",
-      "breakpoints": true
-    },
-    {
-      "idx": 6,
-      "version": "5",
-      "when": 1783051424949,
-      "tag": "0006_certain_scarlet_spider",
-      "breakpoints": true
-    },
-    {
-      "idx": 7,
-      "version": "5",
-      "when": 1783055611859,
-      "tag": "0007_serious_amphibian",
-      "breakpoints": true
-    },
-    {
-      "idx": 8,
-      "version": "5",
-      "when": 1783307281984,
-      "tag": "0008_steep_doomsday",
+      "version": "7",
+      "when": 1784743434671,
+      "tag": "0001_tiresome_nuke",
       "breakpoints": true
     }
   ]
