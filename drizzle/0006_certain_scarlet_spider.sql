@@ -1,0 +1,1 @@
+ALTER TABLE `games` ADD `teamsEnabled` boolean DEFAULT false;

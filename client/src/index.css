@@ -1,0 +1,124 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Define CSS custom properties for military theme */
+:root {
+  --military-bg: #0a0f0a;
+  --military-surface: #111a11;
+  --military-border: #1a3a1a;
+  --military-text: #e0e0e0;
+  --military-muted: #8a8a8a;
+}
+
+@theme inline {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Orbitron', ui-sans-serif, system-ui, sans-serif;
+  --color-green-neon: #00ff41;
+  --color-green-dim: #0a8a0a;
+  --color-green-dark: #0a2e0a;
+  --color-green-glow: #39ff14;
+  --color-military-bg: oklch(0.1 0.02 140);
+  --color-military-surface: oklch(0.13 0.02 140);
+  --color-military-border: oklch(0.18 0.03 140);
+  --color-accent-green: #00ff41;
+  --color-accent-green-soft: rgba(0, 255, 65, 0.15);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: oklch(0.1 0.02 140);
+  --color-foreground: oklch(0.9 0.01 100);
+  --color-card: oklch(0.13 0.02 140);
+  --color-card-foreground: oklch(0.9 0.01 100);
+  --color-popover: oklch(0.13 0.02 140);
+  --color-popover-foreground: oklch(0.9 0.01 100);
+  --color-primary: #00ff41;
+  --color-primary-foreground: oklch(0.1 0.02 140);
+  --color-secondary: oklch(0.18 0.03 140);
+  --color-secondary-foreground: oklch(0.75 0.01 100);
+  --color-muted: oklch(0.18 0.03 140);
+  --color-muted-foreground: oklch(0.55 0.01 100);
+  --color-accent: oklch(0.18 0.04 140 / 0.5);
+  --color-accent-foreground: #00ff41;
+  --color-destructive: #dc2626;
+  --color-destructive-foreground: oklch(1 0 0);
+  --color-border: oklch(0.18 0.03 140);
+  --color-input: oklch(0.18 0.03 140);
+  --color-ring: #00ff41;
+  --radius: 0.375rem;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #00ff41 #0a0f0a;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0a0f0a;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #1a3a1a;
+  border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #00ff41;
+}
+
+@layer base {
+  html {
+    background-color: var(--military-bg);
+  }
+  
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    background-image: radial-gradient(ellipse at top, rgba(0, 255, 65, 0.03) 0%, transparent 60%);
+  }
+}
+
+/* Military-style text effects */
+.text-glow {
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.5), 0 0 20px rgba(0, 255, 65, 0.3), 0 0 30px rgba(0, 255, 65, 0.1);
+}
+
+.text-glow-subtle {
+  text-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
+}
+
+.glow-border {
+  box-shadow: 0 0 5px rgba(0, 255, 65, 0.2), inset 0 0 5px rgba(0, 255, 65, 0.05);
+}
+
+.glow-border-hover:hover {
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.3), inset 0 0 10px rgba(0, 255, 65, 0.1);
+}
+
+/* Scanline effect for military feel */
+.scanline::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 255, 65, 0.01) 2px,
+    rgba(0, 255, 65, 0.01) 4px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
