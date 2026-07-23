@@ -507,7 +507,7 @@ export async function banUserFromGame(userId: number, gameId: number, reason?: s
     // Update with reason to make the ban effective
     await db.update(schema.gameBans)
       .set({ reason: reason || "Pagamento não aprovado", strikes: existing.strikes + 1 })
-      .where(eq(gameBans.id, existing.id));
+      .where(eq(schema.gameBans.id, existing.id));
   } else {
     // Create a new ban directly (e.g., admin rejecting payment proof)
     await db.insert(schema.gameBans).values({ userId, gameId, strikes: 2, reason: reason || "Pagamento não aprovado" });
