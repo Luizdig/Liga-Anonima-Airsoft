@@ -320,6 +320,17 @@ export async function getAllSettings() {
 
 // ============ USER MANAGEMENT ============
 
+export async function getAllUsers() {
+  const db = getDb();
+  return db.select().from(schema.users).orderBy(schema.users.name);
+}
+
+export async function banUser(userId: number, banned: boolean) {
+  const db = getDb();
+  await db.update(schema.users).set({ banned }).where(eq(schema.users.id, userId));
+}
+
+
 // ============ GAME PARTICIPATIONS ============
 
 export async function createGameParticipation(data: schema.InsertGameParticipation) {
@@ -552,3 +563,5 @@ export async function removeParticipation(participationId: number) {
   const db = getDb();
   await db.delete(schema.gameParticipations).where(eq(schema.gameParticipations.id, participationId));
 }
+
+export { gameImages, gamePaymentProofs, gameTeamAssignments, gameBans } from "../drizzle/schema";
