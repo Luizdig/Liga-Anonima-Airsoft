@@ -1,0 +1,3 @@
+id,storeItemId,senderId,receiverId,message,read,createdAt
+1,30001,1860001,30001,"Olá, tenho interesse.",0,2026-07-03 19:12:43
+30001,60001,30001,1860001,"Boa noite meu nobre, troca numa mariola com guaravita?",0,2026-07-03 21:58:28

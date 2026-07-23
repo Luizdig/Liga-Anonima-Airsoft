@@ -12,7 +12,8 @@
     "test": "vitest run",
     "db:generate": "drizzle-kit generate",
     "db:compile-migrate": "tsc --project tsconfig.migrate.json",
-    "db:migrate": "node drizzle/dist/migrate.js"
+    "db:migrate": "node drizzle/dist/migrate.js",
+    "db:seed": "tsx drizzle/seed.ts"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.693.0",
@@ -53,6 +54,7 @@
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
     "cookie": "^1.0.2",
+    "csv-parse": "^7.0.1",
     "date-fns": "^4.1.0",
     "drizzle-orm": "^0.31.2",
     "embla-carousel-react": "^8.6.0",

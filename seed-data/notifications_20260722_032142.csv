@@ -1,0 +1,11 @@
+id,userId,type,title,message,relatedId,isRead,createdAt
+1,1860001,store_reserved,Produto Reservado,"Test User reservou seu produto ""M4A1""",60001,0,2026-07-09 05:19:30
+30001,30001,store_reserved,Produto Reservado,"Luiz reservou seu produto ""teste""",120001,1,2026-07-09 05:27:03
+60001,30001,store_reserved,Produto Reservado,"Luiz reservou seu produto ""teste""",120001,1,2026-07-09 05:28:15
+90001,6390001,payment_approved,Pagamento Aprovado,"Seu pagamento para o jogo ""teste"" foi aprovado!",300001,1,2026-07-09 05:39:50
+120001,30001,store_sold,Nova avaliacao,Luiz deixou uma avaliacao de 5 estrelas,120001,1,2026-07-10 03:32:47
+150001,1,store_reserved,Produto Reservado,"Daniel Koch reservou seu produto ""Test Item""",270004,0,2026-07-10 23:47:49
+180001,1,store_reserved,Produto Reservado,"Daniel Koch reservou seu produto ""Test Item""",270002,0,2026-07-11 00:23:21
+180002,1,store_reserved,Produto Reservado,"Daniel Koch reservou seu produto ""Test Item""",270003,0,2026-07-11 00:23:32
+210001,30001,store_reserved,Produto Reservado,"Luiz Carlos Junior reservou seu produto ""teste""",360001,1,2026-07-12 03:26:22
+240001,30001,payment_approved,Pagamento Aprovado,"Seu pagamento para o jogo ""Teste"" foi aprovado!",360001,1,2026-07-14 21:14:17
